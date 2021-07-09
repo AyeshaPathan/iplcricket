@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN PREMIER LEAGUE</title>
+    <link rel="stylesheet" href="ipl.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/ipl2.png" alt="">
+        </div>
+
+
+        <!-- this is for background logo -->
+        <div class="background">
+            <img src="images/csblogo.png" id="logobg" alt="">
+        </div>
+
+        <div class="heading">
+            <h1 id="head">
+                Royal Challengers Bangalore
+            </h1>
+
+            <p style="font-weight: 500;">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nam nesciunt cum error officia, perferendis
+                laborum. Sunt aperiam sit, tempore voluptatem assumenda quam nam architecto consectetur veniam natus
+                veritatis corrupti quod minima quo. Atque porro corrupti praesentium culpa tempore? Ipsam.
+            </p>
+
+            <button>WATCH NOW</button>
+        </div>
+
+        <!-- this is for main image -->
+
+        <div class="image">
+            <img id="myimage" src="images/rcb-removebg-preview.png" alt="">
+        </div>
+
+
+
+
+        <!-- now navbar -->
+
+        <div class="navbar">
+            <ul>
+                <a href="index.html" style="text-decoration: none;">
+                    <li>Teams</li>
+
+                </a>
+               
+
+                <a href="play.html" style="text-decoration: none;"><li>
+                    Players
+                </li>
+                </a>
+
+
+                <a href="venue.html" style="text-decoration: none;">
+                <li>Venue</li>
+                </a>
+                    
+                <div class="dropdown">
+                    <li>Matches</li>
+
+                    <div class="dropdown-content">
+                       
+                        <a href="sum.html">match summary</a>
+                        <a href="win.html">winner</a>
+                        <a href="los.html">looser</a>
+                        <a href="man.html">man of the match</a>
+                        <a href="bow.html">bowler of the match</a>
+                        <a href="fil.html">best fielder</a>
+                    </div>
+                </div>
+                <!--<li>Matches
+                    <ol>list of matches</ol>
+                    <ol>match summary</ol>
+                </li>-->
+
+            </ul>
+        </div>
+
+        <!-- html code is done -->
+
+        <!-- now jump to css code -->
+
+        <!-- one class is missing -->
+
+        <div class="empty">
+
+
+        </div>
+
+        <!-- this is for remaining teams -->
+
+        <div class="list">
+            <ol>
+                <li onclick="myFun('images/css3.png', 'gold', 'Chennai Super Kings', 'images/csk3.png')">CSK</li>
+
+
+                <!-- first one is sucessfully working -->
+                <!-- copy and change the image name, color -->
+
+                <li onclick="myFun('images/dd1.png', 'blue', 'Delhi Capitals', 'images/ddlogo.png')">DC</li>
+                <li onclick="myFun('images/mi.png', 'dodgerblue', 'Mumbai Indians', 'images/milogo.png')">MI</li>
+                <li onclick="myFun('images/srh.png', 'orangered', 'Sun Raise Hydrabad', 'images/srhlogo.png')">SRH</li>
+                <li onclick="myFun('images/kp.png', 'red', 'King XI Punjab', 'images/kplogo.png')">KXIP</li>
+                <li onclick="myFun('images/rr1.png', '#ff3385', 'Rajastan Royals', 'images/rrlogo.png')">RR</li>
+                <li onclick="myFun('images/kkr.png', 'purple', 'Kolkata Knight Riders', 'images/kkrlogo.png')">KKR</li>
+            </ol>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p class="textFooter">
+            Copyright &copy; 2027 all rights reserved
+        </p>
+
+    </footer>
+
+
+
+
+
+    <script>
+
+        function myFun(image, colour, head, logo) {
+            document.getElementById('myimage').src = image;
+            document.querySelector('.empty').style.backgroundColor = colour;
+            document.querySelector('button').style.backgroundColor = colour;
+            document.getElementById('head').innerHTML = head;
+            document.getElementById('logobg').src = logo;
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
